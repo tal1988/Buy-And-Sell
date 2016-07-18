@@ -43,7 +43,8 @@
         android:background="@drawable/rounded_edit_text"
         android:layout_toRightOf="@+id/textView"
         android:layout_alignBaseline="@+id/textView"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -55,7 +56,7 @@
         android:layout_toRightOf="@id/textView2"
         android:layout_alignBaseline="@id/textView2"
         android:layout_marginLeft="25dp"
-        />
+        android:gravity="center"/>
 
     <Button
         android:background="@drawable/shadow2"

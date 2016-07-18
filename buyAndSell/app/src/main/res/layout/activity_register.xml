@@ -19,8 +19,8 @@
         />
 
     <EditText
-        android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/register_edit_text_width"
+        android:layout_height="@dimen/register_edit_text_height"
         android:id="@+id/firstNameText"
         android:textColor="@color/black"
         android:background="@drawable/rounded_edit_text"
@@ -31,8 +31,8 @@
         android:gravity="center"/>
 
     <EditText
-        android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/register_edit_text_width"
+        android:layout_height="@dimen/register_edit_text_height"
         android:id="@+id/lastNameText"
         android:textColor="@color/black"
         android:background="@drawable/rounded_edit_text"
@@ -43,8 +43,8 @@
         android:gravity="center"/>
 
     <EditText
-        android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/register_edit_text_width"
+        android:layout_height="@dimen/register_edit_text_height"
         android:id="@+id/userNameText"
         android:textColor="@color/black"
         android:background="@drawable/rounded_edit_text"
@@ -55,8 +55,8 @@
         android:gravity="center"/>
 
     <EditText
-        android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/register_edit_text_width"
+        android:layout_height="@dimen/register_edit_text_height"
         android:id="@+id/passwordText"
         android:textColor="@color/black"
         android:inputType="textPassword"
@@ -68,8 +68,8 @@
         android:gravity="center"/>
 
     <EditText
-        android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/register_edit_text_width"
+        android:layout_height="@dimen/register_edit_text_height"
         android:id="@+id/confrimPasswordText"
         android:textColor="@color/black"
         android:background="@drawable/rounded_edit_text"
@@ -81,8 +81,8 @@
         android:gravity="center"/>
 
     <EditText
-        android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/register_edit_text_width"
+        android:layout_height="@dimen/register_edit_text_height"
         android:id="@+id/emailText"
         android:textColor="@color/black"
         android:background="@drawable/rounded_edit_text"
@@ -116,15 +116,5 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/shadow"
         android:onClick="onReturnButtonPressedRegister" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/missingDetails"
-        android:layout_below="@+id/emailText"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/red"
-        android:textSize="15dp"
-        android:visibility="invisible"
-        android:layout_centerHorizontal="true"
-        />
+
 </RelativeLayout>

@@ -466,6 +466,7 @@ public class SellActivity extends Activity
         {
             Toast toast = Toast.makeText(getApplicationContext(),"There Are Missing Details",Toast.LENGTH_LONG);
             toast.show();
+            prg.dismiss();
         }
         else
         {
@@ -485,6 +486,7 @@ public class SellActivity extends Activity
         {
             Toast toast = Toast.makeText(getApplicationContext(),"There Are Missing Details",Toast.LENGTH_LONG);
             toast.show();
+            prg.dismiss();
         }
         else
         {
@@ -504,6 +506,7 @@ public class SellActivity extends Activity
         {
             Toast toast = Toast.makeText(getApplicationContext(),"There Are Missing Details",Toast.LENGTH_LONG);
             toast.show();
+            prg.dismiss();
         }
         else
         {
@@ -523,6 +526,7 @@ public class SellActivity extends Activity
         {
             Toast toast = Toast.makeText(getApplicationContext(),"There Are Missing Details",Toast.LENGTH_LONG);
             toast.show();
+            prg.dismiss();
         }
         else
         {
@@ -544,6 +548,7 @@ public class SellActivity extends Activity
         {
             Toast toast = Toast.makeText(getApplicationContext(),"There Are Missing Details",Toast.LENGTH_LONG);
             toast.show();
+            prg.dismiss();
         }
         else
         {
@@ -558,6 +563,9 @@ public class SellActivity extends Activity
     //This method activate the camera activity.
     public void ontakePhotoButtonClicked(View view)
     {
+        if(spinner.getSelectedItemId() == DEFULT_CHOISE)
+            return;
+
         if(imageCounter < MAX_IMG)
         {
             Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

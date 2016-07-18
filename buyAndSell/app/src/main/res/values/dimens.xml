@@ -8,4 +8,6 @@
     <dimen name="welcome_height">240dp</dimen>
     <dimen name="buy_and_sell_button">500px</dimen>
     <dimen name="disconnect_button">450px</dimen>
+    <dimen name="register_edit_text_width">220dp</dimen>
+    <dimen name="register_edit_text_height">30dp</dimen>
 </resources>

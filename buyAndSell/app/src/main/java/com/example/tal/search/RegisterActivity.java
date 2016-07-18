@@ -16,6 +16,7 @@ public class RegisterActivity extends Activity
     //Class variables.
     private final int STRING_DEFULT_LENGTH = 0;
     public final long DELAY = 100;
+    public final int PASSWORD_REQUIRED_LENGTH = 5;
 
     private String firstName;
     private String lastName;
@@ -89,7 +90,7 @@ public class RegisterActivity extends Activity
             progressDialog.dismiss();
             return;
         }
-        else if (password.equals(confirmPassword) && password.length() < 5)
+        else if (password.equals(confirmPassword) && password.length() < PASSWORD_REQUIRED_LENGTH)
         {
             Toast toast = Toast.makeText(RegisterActivity.this,"Passwords most contains 5 character length",Toast.LENGTH_LONG);
             View view1 = toast.getView();

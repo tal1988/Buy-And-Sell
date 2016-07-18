@@ -74,9 +74,9 @@ public class MainActivity extends Activity
 
         if(userName.length() == STRING_DEFULT_LENGTH || passWord.length() == STRING_DEFULT_LENGTH)
         {
-            Toast toast = Toast.makeText(MainActivity.this,"User Or Password Are Missing",Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(MainActivity.this,"User Name Or Password Are Missing",Toast.LENGTH_LONG);
             View view1 = toast.getView();
-            view1.setBackgroundResource(R.color.lightRed);
+            view1.setBackgroundResource(R.color.error);
             toast.show();
             progressDialog.dismiss();
         }
