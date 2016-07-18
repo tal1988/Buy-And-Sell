@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAppWindow"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/welcome_height"
+        android:id="@+id/welcome"
+        android:src="@mipmap/welcome"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/welcome"
+        android:layout_alignRight="@+id/welcome"
+        android:layout_alignBottom="@+id/welcome"
+        android:gravity="center"
+        android:typeface="serif"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="55dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeText"
+        android:textSize="30dp"
+        android:textColor="@color/lightBlack"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:text="What Do You Want To"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeText2"
+        android:textSize="30dp"
+        android:textColor="@color/lightBlack"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:text="Do Today?"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="@dimen/buy_and_sell_button"
+        android:layout_height="@dimen/buy_and_sell_button"
+        android:id="@+id/buy"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/buy"
+        android:layout_below="@+id/welcomeText2"
+        android:layout_marginLeft="10dp"
+        android:onClick="buyButtonPressed" />
+    <Button
+        android:layout_width="@dimen/buy_and_sell_button"
+        android:layout_height="@dimen/buy_and_sell_button"
+        android:background="@mipmap/sell"
+        android:layout_below="@id/welcomeText2"
+        android:id="@+id/sell"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/buy"
+        android:onClick="sellButtonPressed" />
+    <Button
+        android:layout_width="@dimen/disconnect_button"
+        android:layout_height="@dimen/disconnect_button"
+        android:id="@+id/disconnect"
+        android:layout_below="@+id/welcomeText2"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/logout"
+        android:onClick="disconnectButtonPressed" />
+</RelativeLayout>

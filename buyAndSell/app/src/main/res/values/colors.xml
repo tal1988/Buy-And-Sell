@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="registerTextColor">#3399ff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="lightBlack">#555555</color>
+    <color name="lightBlue">#cce6ff</color>
+    <color name="superLightBlue">#e6ffff</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="lightRed">#ffcccc</color>
+    <color name="darkOrange">#e6ac00</color>
+    <color name="lightOrange">#fff2cc</color>
+    <color name="blue">#1ab2ff</color>
+    <color name="error">#ff4d4d</color>
+</resources>

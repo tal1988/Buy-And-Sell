@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="buy_activity_button_height">60dp</dimen>
+    <dimen name="img_width">70dp</dimen>
+    <dimen name="img_height">70dp</dimen>
+    <dimen name="welcome_height">240dp</dimen>
+    <dimen name="buy_and_sell_button">500px</dimen>
+    <dimen name="disconnect_button">450px</dimen>
+</resources>

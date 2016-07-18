@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reletive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tal.search.SellActivity">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="-20dp"
+        android:id="@+id/sellPic"
+        android:src="@mipmap/buy_and_sell"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/takePhoto"
+        android:background="@drawable/rounded_button4"
+        android:layout_alignParentBottom="true"
+        android:text="Take A Photo"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:onClick="ontakePhotoButtonClicked" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/apply"
+        android:text="Apply"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_button4"
+        android:layout_toLeftOf="@+id/sellPic"
+        android:layout_marginRight="60dp"
+        android:onClick="onApplyButtonPressed" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/returnBtn"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_button4"
+        android:text="Return"
+        android:layout_toRightOf="@+id/sellPic"
+        android:layout_marginLeft="55dp"
+        android:onClick="onReturnButtonPressed" />
+
+    <!-- general edit texts-->
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/manufacturer"
+        android:hint="Manufacturer"
+        android:gravity="center"
+        android:layout_below="@+id/reletive2"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/modle"
+        android:hint="Modle"
+        android:gravity="center"
+        android:layout_below="@+id/manufacturer"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/saleArea"
+        android:hint="Sale Area"
+        android:gravity="center"
+        android:layout_below="@+id/phoneMemory"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/contact"
+        android:hint="Contact Phone"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_below="@+id/saleArea"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/price"
+        android:hint="Price"
+        android:gravity="center"
+        android:layout_below="@+id/reletive2"
+        android:layout_toRightOf="@+id/manufacturer"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/color"
+        android:hint="Color"
+        android:gravity="center"
+        android:layout_below="@+id/price"
+        android:layout_toRightOf="@+id/modle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+
+
+    <!-- moblie edit text -->
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/phoneMemory"
+        android:hint="Memory"
+        android:gravity="center"
+        android:layout_below="@+id/modle"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+
+
+    <!-- computer edit text -->
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/computerRam"
+        android:hint="RAM"
+        android:gravity="center"
+        android:layout_below="@+id/modle"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/computerHardDisk"
+        android:hint="Hard-Disk"
+        android:gravity="center"
+        android:layout_below="@+id/color"
+        android:layout_toRightOf="@+id/phoneMemory"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/computerProcessor"
+        android:hint="Processor"
+        android:gravity="center"
+        android:layout_below="@+id/computerHardDisk"
+        android:layout_toRightOf="@+id/saleArea"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible" />
+
+
+    <!-- furniture edit text -->
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/furnitureType"
+        android:hint="Furniture Type"
+        android:gravity="center"
+        android:layout_below="@+id/reletive2"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/furnitureUngroup"
+        android:hint="Can Be Ungroup?"
+        android:gravity="center"
+        android:layout_below="@+id/furnitureType"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/furnitureSize"
+        android:hint="Size"
+        android:gravity="center"
+        android:layout_below="@+id/furnitureUngroup"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+
+    <!-- car edit text -->
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/carEngineVolume"
+        android:hint="Engine Volume"
+        android:gravity="center"
+        android:layout_below="@+id/modle"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/carYear"
+        android:hint="Year"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_below="@+id/color"
+        android:layout_toRightOf="@+id/phoneMemory"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/carOwnerNumber"
+        android:hint="Owners Number?"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_below="@+id/carYear"
+        android:layout_toRightOf="@+id/saleArea"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/carEngineType"
+        android:hint="Engine Fuel Type?"
+        android:gravity="center"
+        android:layout_below="@+id/carOwnerNumber"
+        android:layout_toRightOf="@+id/contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+
+
+    <!-- apartment edit text -->
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentType"
+        android:hint="Property Type"
+        android:gravity="center"
+        android:layout_below="@+id/reletive2"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentCity"
+        android:hint="City"
+        android:gravity="center"
+        android:layout_below="@+id/apartmentType"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentNeighborhood"
+        android:hint="Neighborhood"
+        android:gravity="center"
+        android:layout_below="@+id/apartmentCity"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentAddress"
+        android:hint="Address"
+        android:gravity="center"
+        android:layout_below="@+id/apartmentNeighborhood"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentRooms"
+        android:hint="Rooms Number"
+        android:gravity="center"
+        android:layout_below="@+id/price"
+        android:layout_toRightOf="@+id/modle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentBalcony"
+        android:hint="Balconies Number"
+        android:gravity="center"
+        android:layout_below="@+id/apartmentRooms"
+        android:layout_toRightOf="@+id/phoneMemory"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentFloor"
+        android:hint="Floor Number"
+        android:gravity="center"
+        android:layout_below="@+id/apartmentBalcony"
+        android:layout_toRightOf="@+id/saleArea"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_edit_text2"
+        android:id="@+id/apartmentSize"
+        android:hint="Size(S.meter)"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_below="@+id/apartmentFloor"
+        android:layout_toRightOf="@+id/contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"/>
+
+
+    <RelativeLayout
+        android:id="@+id/reletive2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/sellPic"
+        android:layout_weight=".28"
+        android:background="@drawable/spinner_border"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Spinner
+            android:id="@+id/sellItmes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="300dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/dropdown" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_height"
+        android:id="@+id/image1"
+        android:layout_above="@+id/takePhoto"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imageview_border"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/image1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image1"
+        android:layout_alignTop="@+id/image1"
+        android:layout_alignRight="@+id/image1"
+        android:layout_alignBottom="@+id/image1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Photo"
+        android:textColor="@color/black"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_height"
+        android:id="@+id/image2"
+        android:layout_above="@+id/takePhoto"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/imageview_border"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/image2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image2"
+        android:layout_alignTop="@+id/image2"
+        android:layout_alignRight="@+id/image2"
+        android:layout_alignBottom="@+id/image2"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Photo"
+        android:textColor="@color/black"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_height"
+        android:id="@+id/image3"
+        android:layout_above="@+id/takePhoto"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/imageview_border"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/image3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image3"
+        android:layout_alignTop="@+id/image3"
+        android:layout_alignRight="@+id/image3"
+        android:layout_alignBottom="@+id/image3"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Photo"
+        android:textColor="@color/black"
+        android:visibility="invisible"/>
+</RelativeLayout>
